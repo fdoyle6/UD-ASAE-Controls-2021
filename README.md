@@ -4,16 +4,17 @@ The programs written by the Controls Team for the UD ASAE Advanced Class Plane f
 ## Controls Team Members
 **Captain**: Frank Doyle (https://github.com/fdoyle6)
 
-**Members**: 
+**Team Members**: 
 
-## Other Team Repositories and Captains
-**Fuselage Team**: ( *** github URL here *** ) - Captain: Hannah Wiswell (*** github user URL here *** )
+## Other Teams
+**Fuselage Team:** ( ** GitHub Repo URL ** ) - *Captain:* Hannah Wiswell ( ** GitHub User URL ** )
 
-**Wings Team**: ( *** github URL here *** ) - Captain: Isabella Mawry ( *** github user URL here *** )
+**Wings Team:** ( ** GitHub Repo URL ** ) - *Captain:* Isabella Mawry ( ** GitHub User URL ** )
 
 ## Plane Requirements
 ** Summary Here **
-See file **XYZ** for the full list of specifications
+
+See file ** XYZ ** for the full list of specifications
 
 ## Files & Directories Descriptions
 **Give a rough overview of what each program and folder is for and how they were used**
