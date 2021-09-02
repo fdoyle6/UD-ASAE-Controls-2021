@@ -10,11 +10,9 @@ governing entity or organization you may be a part of.
 **Captain**: Frank Doyle (https://github.com/fdoyle6)
 
 **Team Members**: 
-
-## Other Teams
-**Fuselage Team:** ( ** GitHub Repo URL ** ) - *Captain:* Isabella Mawry ( ** GitHub User URL ** )
-
-**Wings Team:** ( ** GitHub Repo URL ** ) - *Captain:* Hannah Wiswell ( ** GitHub User URL ** )
+Chris Czerwinski (https://github.com/cczerwin762)
+Michael Rosen (https://github.com/mrosen2424)
+Jack Swift (https://github.com/Jack-Swift714)
 
 ## Plane Requirements
 ** Summary Here **
