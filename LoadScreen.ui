@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>664</width>
+    <height>607</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>661</width>
+      <height>591</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout" stretch="1,0,1,1,1">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="styleSheet">
+        <string notr="true">background: white</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/ASAE_LoadScreen/ASAEScreenSaver.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="font">
+        <font>
+         <family>Helonia</family>
+         <pointsize>48</pointsize>
+         <italic>true</italic>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: white</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#0000ff;&quot;&gt;Flyin' Hens&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>26</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: white
+</string>
+       </property>
+       <property name="lineWidth">
+        <number>0</number>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#0000ff;&quot;&gt;2021-2022&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignHCenter|Qt::AlignTop</set>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+       <property name="indent">
+        <number>0</number>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QProgressBar" name="progressBar">
+       <property name="styleSheet">
+        <string notr="true">text: blue</string>
+       </property>
+       <property name="value">
+        <number>24</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="textVisible">
+        <bool>true</bool>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="textDirection">
+        <enum>QProgressBar::BottomToTop</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: white
+</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#0000ff;&quot;&gt;Loading ...&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignHCenter|Qt::AlignTop</set>
+       </property>
+       <property name="margin">
+        <number>10</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="pics.qrc"/>
+ </resources>
+ <connections/>
+</ui>
