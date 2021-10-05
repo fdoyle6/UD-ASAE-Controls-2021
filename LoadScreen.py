@@ -11,7 +11,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_LoadScreen(object):
+class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(664, 607)
@@ -52,15 +52,15 @@ class Ui_LoadScreen(object):
         self.label_2.setIndent(0)
         self.label_2.setObjectName("label_2")
         self.verticalLayout.addWidget(self.label_2)
-        self.progressBar = QtWidgets.QProgressBar(self.verticalLayoutWidget)
-        self.progressBar.setStyleSheet("text: blue")
-        self.progressBar.setProperty("value", 24)
-        self.progressBar.setAlignment(QtCore.Qt.AlignCenter)
-        self.progressBar.setTextVisible(True)
-        self.progressBar.setOrientation(QtCore.Qt.Horizontal)
-        self.progressBar.setTextDirection(QtWidgets.QProgressBar.BottomToTop)
-        self.progressBar.setObjectName("progressBar")
-        self.verticalLayout.addWidget(self.progressBar)
+        self.LoadBar = QtWidgets.QProgressBar(self.verticalLayoutWidget)
+        self.LoadBar.setStyleSheet("text: blue")
+        self.LoadBar.setProperty("value", 24)
+        self.LoadBar.setAlignment(QtCore.Qt.AlignCenter)
+        self.LoadBar.setTextVisible(True)
+        self.LoadBar.setOrientation(QtCore.Qt.Horizontal)
+        self.LoadBar.setTextDirection(QtWidgets.QProgressBar.BottomToTop)
+        self.LoadBar.setObjectName("LoadBar")
+        self.verticalLayout.addWidget(self.LoadBar)
         self.label_3 = QtWidgets.QLabel(self.verticalLayoutWidget)
         font = QtGui.QFont()
         font.setPointSize(20)

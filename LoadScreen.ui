@@ -93,7 +93,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QProgressBar" name="progressBar">
+      <widget class="QProgressBar" name="LoadBar">
        <property name="styleSheet">
         <string notr="true">text: blue</string>
        </property>
