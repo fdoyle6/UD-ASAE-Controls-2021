@@ -19,5 +19,5 @@ The competion goal of this plane is to help firefighters that are working on the
 plane, while also releasing an autonomous drone in-flight, which is to land in a circle at an undisclosed location on the field. These goals, as well as requirements for telemetry recording and playback and 750 Watt maximum power draw for the propulsion and power loop, were the key driving forces in our design. For a more detailed description of the rules, requirements and goals of the competition, please see the document [SAE_AeroDesign_2022_Rules.pdf](https://github.com/fdoyle6/UD-ASAE-Controls-2021/blob/main/SAE_AeroDesign_2022_Rules.pdf).
 
 ## Files & Directories Descriptions
-**Give a rough overview of what each program and folder is for and how they were used**
+**Give a rough overview of what each program and folder is for and how they were used**  
 **packages_and_plugins**: All of the packages and plug-in that need to be downloaded to execute the code in this repository
