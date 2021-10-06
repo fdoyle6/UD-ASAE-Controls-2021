@@ -20,3 +20,4 @@ plane, while also releasing an autonomous drone in-flight, which is to land in a
 
 ## Files & Directories Descriptions
 **Give a rough overview of what each program and folder is for and how they were used**
+**packages_and_plugins**: All of the packages and plug-in that need to be downloaded to execute the code in this repository
