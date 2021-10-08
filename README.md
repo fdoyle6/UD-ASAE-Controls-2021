@@ -6,10 +6,11 @@ The files and programs in this repository are not to be copied or used in any wa
 team know nothing about and condemn these actions if used in this manner, and by misusing these programs and/or code snippets, you may be subject to the penalties of whatever 
 governing entity or organization you may be a part of.
 
-## Controls Team Members
-**Captain**: Frank Doyle (https://github.com/fdoyle6)
+## Controls Team
+**Captain**:  
+Frank Doyle (https://github.com/fdoyle6)  
 
-**Team Members**: 
+**Team Members**:  
 Chris Czerwinski (https://github.com/cczerwin762)  
 Michael Rosen (https://github.com/mrosen2424)  
 Jack Swift (https://github.com/Jack-Swift714)
@@ -19,5 +20,8 @@ The competion goal of this plane is to help firefighters that are working on the
 
 ## Files & Directories Descriptions
 **Give a rough overview of what each program and folder is for and how they were used**  
-**packages_and_plugins**: All of the packages and plug-in that need to be downloaded to execute the code in this repository
+**packages_and_plugins**: All of the packages and plug-in that need to be downloaded to execute the code in this repository  
+
 **GUI**: The code run on the ground station laptop to display the recieved telemetry data from the DAS
+
+**Ground_Station**: The code and firmware developed to run on the ground station to recieve the telemetry data from the DAS and send the release to the DAS to enable the in-flight PADA (Drone) drop
