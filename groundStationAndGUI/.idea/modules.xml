@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/ASAE2122GUI.iml" filepath="$PROJECT_DIR$/.idea/ASAE2122GUI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../UD-ASAE-Controls-202122/.idea/UD-ASAE-Controls-202122.iml" filepath="$PROJECT_DIR$/../UD-ASAE-Controls-202122/.idea/UD-ASAE-Controls-202122.iml" />
+    </modules>
+  </component>
+</project>
