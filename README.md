@@ -3,7 +3,8 @@ This repository contains all of the programs and code written by the Controls Te
 school year. The team captain is Frank Doyle (myself) and the team members are Chris Czerwinski, Michael Rosen, and Jack Swift. This
 project was our capstone project, and we were tasked with building an RC plane for the ASAE competition in the spring that met
 specific physical requirements and could accomplish pre-assigned tasks. Our team, working alongside Isabella Mawry's Fuselage Team and
-Hannah Wiswell's Wings Team, designed, built, and tested this plane. For more details on each topic mentioned, please see below.
+Hannah Wiswell's Wings Team, designed, built, and tested this plane. For more details on each topic mentioned, please see below, or 
+please see the [ASAE website](https://udasae.wixsite.com/ud-asae).
 
 ## Academic Dishonesty and Plagiarism Disclaimer
 The files and programs in this repository are not to be copied or used in any way shape or form without the the expressed consent of
