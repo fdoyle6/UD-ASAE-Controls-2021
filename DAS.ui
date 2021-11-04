@@ -24,7 +24,7 @@
       <x>0</x>
       <y>0</y>
       <width>711</width>
-      <height>661</height>
+      <height>641</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout" rowstretch="2,1,6,2,1,6">
@@ -306,28 +306,29 @@
      </item>
     </layout>
    </widget>
-  </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>1532</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <widget class="QMenu" name="menuDAS">
-    <property name="title">
-     <string>DAS</string>
+   <widget class="QPushButton" name="StopButton">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>640</y>
+      <width>361</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: rgb(255, 0, 0)</string>
+    </property>
+    <property name="text">
+     <string> Halt Data</string>
     </property>
    </widget>
-   <widget class="QMenu" name="menuLog">
-    <property name="title">
-     <string>Log</string>
-    </property>
-   </widget>
-   <addaction name="menuDAS"/>
-   <addaction name="menuLog"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
