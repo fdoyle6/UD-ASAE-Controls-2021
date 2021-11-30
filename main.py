@@ -21,15 +21,16 @@ import csv
 #UI Files
 from LoadScreen import Ui_LoadScreen
 from DAS import Ui_DAS
+from DASnoGPS import Ui_MainWindow
 
 
 
 # Arguments !!! THESE MUST BE CHANGED WHEN RAN ON A DIFFERENT COMPUTER
 #upper left latitude and longitude of picture
-ul_lat_lon = (39.68180233022854, -75.75196397747506)#(39.6816628374625, -75.75363767585272)-Benny;(32.61267,-97.48776) - map
+ul_lat_lon = (39.6816628374625, -75.75363767585272)#(39.68180233022854, -75.75196397747506)#(39.6816628374625, -75.75363767585272)-Benny;(32.61267,-97.48776) - map
 #lower right latitude and longitude of picture
-lr_lat_lon = (39.68070781834817, -75.74960457883779)#(39.67454497595476, -75.74301612795641)-Benny;(32.60752,-97.48138) - map
-map =  'Mckinley.png'#path to picture
+lr_lat_lon = (39.67454497595476, -75.74301612795641)#(39.68070781834817, -75.74960457883779)#(39.67454497595476, -75.74301612795641)-Benny;(32.60752,-97.48138) - map
+map =  'Benny.png'#path to picture
 chopHelper = 100 #varies depending on screen size
 bottom = 250 #varies depending on screen size
 COM = 'COM5' #'COM5' -Duino   'COM7' - Feather varies depending on which COM port the GroundStation operates off of
@@ -51,7 +52,7 @@ def rollPitchYaw(magX,magY,magZ,accX,accY,accZ):
     mag_x = magX * cos(pitch) + magY * sin(roll) * sin(pitch) + magZ * cos(roll) * sin(pitch)
     mag_y = magY * cos(roll) - magZ * sin(roll)
     yaw = 180 * atan2(-mag_y, mag_x) / pi
-    return roll+180,pitch+180,yaw+180 #all angles between 0 and 360
+    return roll,pitch,yaw #all angles between 0 and 360
 
 def scale_to_img(lat_lon, h_w, ul_lat_lon, lr_lat_lon):
     """
@@ -78,7 +79,7 @@ class MainWindow(QMainWindow):
         super(MainWindow, self).__init__()
         self.width = width
         self.height = height
-        self.main_ui = Ui_DAS()
+        self.main_ui = Ui_MainWindow()
         self.main_ui.setupUi(self)
         self.GPS = Widget(self.width,self.height)
         if(playBackMode):
@@ -103,7 +104,7 @@ class Widget(QWidget):
         self.image = QPixmap(map)
         self.setGeometry(width//2+chopHelper, chopHelper//2, 500, 300)
         self.resize(width // 2 - chopHelper, height - chopHelper//2)
-        self.show()
+        #self.show() #uncomment when GPS works
 
     #instantiates map
     def paintEvent(self, event):
@@ -196,7 +197,6 @@ def main():
     width,height = screen_resolution.width(), screen_resolution.height()
     win = MainWindow(width, height)
     win.show()
-    win.GPS.show()
     sys.exit(app.exec_())
 
 if __name__ == "__main__":
