@@ -18,6 +18,11 @@ fullNavigation:
 	@ # steps
 	@ echo "Navigation programs built.\n"
 
+navigationTest:
+	@ echo "Building navigation test programs\n"
+	@ # steps
+	@ echo "Navigation test program built to Test directory. \n"
+
 
 # Guidance: -----------------------------
 
@@ -26,6 +31,11 @@ fullGuidance:
 	@ # steps
 	@ echo "Guidance programs built.\n"
 
+guidanceTest:
+	@ echo "Building guidance test programs\n"
+	@ # steps
+	@ echo "Guidance test program built to Test directory. \n"
+
 
 # Control: ------------------------------
 
@@ -33,3 +43,8 @@ fullControl:
 	@ echo "Building all control programs\n"
 	@ # steps
 	@ echo "Control programs built.\n"
+
+controlTest:
+	@ echo "Building control test programs\n"
+	@ # steps
+	@ echo "Control test program built to Test directory. \n"
