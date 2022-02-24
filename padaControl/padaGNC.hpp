@@ -7,11 +7,11 @@
 
 
 // stateVars.cpp prototypes
-void runInits(void);
-void getColor(void);
+
 
 // startup.cpp prototypes
-
+void runInits(void);
+void getColor(void);
 
 // navigation.cpp prototypes
 
