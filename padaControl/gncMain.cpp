@@ -2,6 +2,9 @@
 
 int main(void) {
 
+  State state;
+  state.runInits();
+
   // Startup
   runInits();
   getColor();
