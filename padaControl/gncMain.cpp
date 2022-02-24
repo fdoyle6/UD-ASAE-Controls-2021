@@ -1,7 +1,4 @@
-#include <iostream>
-#include "Eigen/Dense"
-#include "startup.hpp"
-#include ""
+#include "padaGNC.hpp"
 
 int main(void) {
 
