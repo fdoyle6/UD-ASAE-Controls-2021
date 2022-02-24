@@ -1,7 +1,7 @@
 #include <iostream>
-#include <Eigen/Dense>
-
-// #include headers.hpp
+#include "Eigen/Dense"
+#include "startup.hpp"
+#include ""
 
 int main(void) {
 
@@ -13,6 +13,7 @@ int main(void) {
   while (hasReleased == false){
     pollSensors();
     updateState();
+    // check if released
   }
 
   // Target Acquisition
