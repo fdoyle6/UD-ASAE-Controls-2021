@@ -1,6 +1,6 @@
 #include "padaGNC.hpp"
 
-// Pre-release functions
+// Pre-release functions (should be none)
 
 
 // Target acquistion functions
