@@ -1,3 +1,3 @@
 # Ground_Station
 
-This directory contains all of the firmware required to make the LoStik for the  ground station function properly.
+This directory holds all of the files needed to run the ground station and gui. This, also, contains pictures artifacted from originally having a GPS Module on the main plane. Since, this has been scrapped, and the code functions without the GPS sending data, but we have not cleaned out the pictures. 
