@@ -33,10 +33,11 @@ requirements and goals of the competition, please see the document
 **Give a rough overview of what each program and folder is for and how they were used**  
 **packages_and_plugins**: All of the packages and plug-in that need to be downloaded to execute the code in this repository  
 
-**GUI**: The code run on the ground station laptop to display the recieved telemetry data from the DAS
+**GUI**: The code run on the ground station laptop to display the recieved telemetry data from the DAS & Ground Station Hardware.
 
 **Ground_Station**: The code and firmware developed to run on the ground station to recieve the telemetry data from the DAS and send 
-the release to the DAS to enable the in-flight PADA (Drone) drop
+the release to the DAS to enable the in-flight PADA (Drone) drop.
 
 **DAS**: The programs run on the on-board Data Acquisition System (DAS) to record the state of the plane from the various on-board
-sensors. The included sensors are a GPS, altimeter, and IMU, and data is sent to the ground station using LoRa. 
+sensors. The included sensors are a GPS, altimeter, and IMU, and data is sent to the ground station using LoRa. The README in this 
+directory has the installation steps.
