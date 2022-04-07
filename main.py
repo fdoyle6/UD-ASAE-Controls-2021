@@ -30,10 +30,10 @@ from DASnoGPS import Ui_MainWindow
 ul_lat_lon = (39.6816628374625, -75.75363767585272)#(39.68180233022854, -75.75196397747506)#(39.6816628374625, -75.75363767585272)-Benny;(32.61267,-97.48776) - map
 #lower right latitude and longitude of picture
 lr_lat_lon = (39.67454497595476, -75.74301612795641)#(39.68070781834817, -75.74960457883779)#(39.67454497595476, -75.74301612795641)-Benny;(32.60752,-97.48138) - map
-map =  'Benny.png'#path to picture
+map =  'TestField.png'#path to picture
 chopHelper = 100 #varies depending on screen size
 bottom = 250 #varies depending on screen size
-COM = 'COM5' #'COM5' -Duino   'COM7' - Feather varies depending on which COM port the GroundStation operates off of
+COM = 'COM8' #'COM5' -Duino   'COM8' - Feather varies depending on which COM port the GroundStation operates off of
 baud =9600 #9600- Duino 115200 - Feather
 GPS_h_w = (1270,760) # I truly have no idea where these numbers come from, play around with new point statments until you find the lr corner
 playBackMode = input("Playback mode (Type yes/y or no/n): ") #true to read in last csv as if it were real time data
