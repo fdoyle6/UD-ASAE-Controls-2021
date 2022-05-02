@@ -58,7 +58,7 @@ void setup()
   //}
   delay(100);
   
-  //Serial.println("LoRa Initializing...");
+  Serial.println("LoRa Initializing...");
   digitalWrite(RFM95_RST, LOW);
   delay(10);
   digitalWrite(RFM95_RST, HIGH);
@@ -68,13 +68,13 @@ void setup()
     Serial.println("LoRa radio init failed");
     while (1);
   }
-  //Serial.println("LoRa setup");
+  Serial.println("LoRa setup");
   if (!rf95.setFrequency(RF95_FREQ)) {
     Serial.println("setFrequency failed");
     while (1);
   }
   rf95.setTxPower(23, false);
-  //Serial.println("Initialization complete");
+  Serial.println("Initialization complete");
 }
 uint32_t timer;
 void loop()

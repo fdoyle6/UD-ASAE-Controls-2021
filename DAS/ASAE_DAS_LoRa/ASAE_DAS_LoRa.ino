@@ -38,17 +38,18 @@ float height = 0.0, initHeight = 0.0, pressure;
 Adafruit_LSM9DS1 lsm = Adafruit_LSM9DS1();
 sensors_event_t accl, magneto, gyo, lsmTemp;
 
+/*
 //GPS - Model: Adafruit Ultimate GPS
 #define GPSSerial Serial1
 Adafruit_GPS GPS(&GPSSerial);
 // Set GPSECHO to 'false' to turn off echoing the GPS data to the Serial console
 // Set to 'true' if you want to debug and listen to the raw GPS sentences
-#define GPSECHO  false
+#define GPSECHO  false // */
 
 float GPSlat,GPSlong, GPSangle, GPSspeed;
 
 //PADA Servo
-#define servoPPin 10
+#define servoPPin 13
 Servo servoP;
 uint8_t PADADropped;
 int servoPDrop = 0;
@@ -58,7 +59,7 @@ bool dropConfirm = false;
 #define redLED A1
 #define greLED A2
 #define bluLED A3
-#define boardLED 13
+// #define boardLED 13
 
 //Data Collection F'n----------------------------------------------------------------------------------------------------------------------------------------------
 uint32_t timer = millis();
@@ -82,7 +83,7 @@ bool data_collect(){
   lsm.read();
   lsm.getEvent(&accl, &magneto, &gyo, &lsmTemp);
 
-  //collect from GPS
+  /* //collect from GPS
   char GPSRaw = GPS.read();
   if(GPS.newNMEAreceived()){
     GPS.lastNMEA();
@@ -104,7 +105,7 @@ bool data_collect(){
       //Serial.println(GPS.longitudeDegrees,6);
       //Serial.println(GPS.speed,2);
     }
-  }
+  } // */
   
   //Putting Data in a packet
   outputData+= String(height,3);
@@ -140,7 +141,7 @@ void setup() {
   Serial.println("Beginning setup...");
   Wire.begin(); //Start I2C communication
   
-  //GPS
+  /* //GPS
   Serial.println("Initializing GPS...");
   GPS.begin(9600);
   GPS.sendCommand(PMTK_SET_NMEA_OUTPUT_RMCGGA);
@@ -148,20 +149,23 @@ void setup() {
   GPS.sendCommand(PGCMD_ANTENNA);
   delay(1000);
   Serial.println("GPS setup");
-  GPSSerial.println(PMTK_Q_RELEASE);
+  GPSSerial.println(PMTK_Q_RELEASE); */
+  
   //Servo
+  servoP.attach(servoPPin);
+  servoP.writeMicroseconds(2000);
   
   //LED
   Serial.println("Initializing LEDs...");
   pinMode(bluLED,OUTPUT);
   pinMode(greLED,OUTPUT);
   pinMode(redLED,OUTPUT);
-  pinMode(boardLED,OUTPUT);
+  // pinMode(boardLED,OUTPUT);
   digitalWrite(bluLED,HIGH);
   digitalWrite(greLED,HIGH);
   digitalWrite(redLED,HIGH);
   delay(1000);
-  digitalWrite(boardLED,LOW);
+  // digitalWrite(boardLED,LOW);
   digitalWrite(bluLED,LOW);
   digitalWrite(greLED,LOW);
   digitalWrite(redLED,LOW);
@@ -216,6 +220,7 @@ void setup() {
     delay(500);
   }
   Serial.println("Altimeter setup");
+
 }
 
 //Main Loop---------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -224,6 +229,7 @@ bool collected;
 void loop() {
   collected = data_collect();
   if(collected){collectct+=1;}
+  if(!dropConfirm){servoP.writeMicroseconds(2000);}
   // put your main code here, to run repeatedly:
   if (rf95.waitAvailableTimeout(200)){
     if (rf95.available()){
@@ -233,7 +239,8 @@ void loop() {
           Serial.println("Message Received: ");
           Serial.println((char*)recvDataPacket);
           if ((strncmp((char*)recvDataPacket,"drop",4)==0)){
-            digitalWrite(boardLED, HIGH);
+            // digitalWrite(boardLED, HIGH);
+            servoP.writeMicroseconds(1000);
             dropConfirm = true;
           }
         }
