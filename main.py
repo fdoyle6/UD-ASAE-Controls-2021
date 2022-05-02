@@ -33,8 +33,8 @@ lr_lat_lon = (39.67454497595476, -75.74301612795641)#(39.68070781834817, -75.749
 map =  'TestField.png'#path to picture
 chopHelper = 100 #varies depending on screen size
 bottom = 250 #varies depending on screen size
-COM = 'COM8' #'COM5' -Duino   'COM8' - Feather varies depending on which COM port the GroundStation operates off of
-baud =9600 #9600- Duino 115200 - Feather
+COM = 'COM7' #'COM5' -Duino   'COM8' - Feather   'COM10' 0r 7 - Frank  varies depending on which COM port the GroundStation operates off of
+baud = 115200 #9600- Duino 115200 - Feather
 GPS_h_w = (1270,760) # I truly have no idea where these numbers come from, play around with new point statments until you find the lr corner
 playBackMode = input("Playback mode (Type yes/y or no/n): ") #true to read in last csv as if it were real time data
 if playBackMode == 'yes' or playBackMode =='y':
