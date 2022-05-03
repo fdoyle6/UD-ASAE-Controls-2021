@@ -13,17 +13,17 @@
 
 //Declaration of Variables------------------------------------------------------------------
 
-//LoRa - Model: Adafruit RFM95W LoRa Module
-#define RFM95_CS 4
-#define RFM95_RST 5
+//LoRa - Model: Adafruit Feather M0 LoRa
+#define RFM95_CS 8
+#define RFM95_RST 4
 #define RFM95_INT 3
 #define RF95_FREQ 915.0
 RH_RF95 rf95(RFM95_CS, RFM95_INT);
 
 //LED & Button
-#define buttonPin 2
-#define PADALED 10
-#define LED 9
+#define buttonPin 12
+#define PADALED A1 //10 - BLUE
+#define LED A0 //9 - RED
 
 //
 bool dropped = false;
@@ -52,7 +52,7 @@ void setup()
   pinMode(RFM95_RST, OUTPUT);
   digitalWrite(RFM95_RST, HIGH);
 
-  Serial.begin(9600);
+  Serial.begin(115200);
   //while (!Serial) {
   //  delay(1);
   //}
@@ -68,13 +68,13 @@ void setup()
     Serial.println("LoRa radio init failed");
     while (1);
   }
-  Serial.println("LoRa setup");
+  //Serial.println("LoRa setup");
   if (!rf95.setFrequency(RF95_FREQ)) {
     Serial.println("setFrequency failed");
     while (1);
   }
   rf95.setTxPower(23, false);
-  Serial.println("Initialization complete");
+  //Serial.println("Initialization complete");
 }
 uint32_t timer;
 void loop()
