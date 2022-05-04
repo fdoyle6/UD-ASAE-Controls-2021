@@ -132,6 +132,7 @@ bool data_collect(){
 //Setup-------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 void setup() {
+  servoP.attach(13);
   Serial.begin(115200);
   //comment out when not connected to serial
   //while(!Serial){delay(1);}
@@ -149,7 +150,6 @@ void setup() {
   GPSSerial.println(PMTK_Q_RELEASE);
   
   //Servo
-  servoP.attach(13); delay(2);
   servoP.write(90);
   
   //LED
